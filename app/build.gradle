@@ -29,7 +29,7 @@ android {
         // OR
         // you can use the key here as ex:
         // it.buildConfigField 'String', 'TMDB_API_KEY', "\"YOUR-API-KEY\""
-        it.buildConfigField 'String', 'TMDB_API_KEY', "\"f7be91ecc9c23485caf3b91c5047555f\""
+        it.buildConfigField 'String', 'TMDB_API_KEY', "\"YOUR-API-KEY\""
     }
 
     configurations.all {
