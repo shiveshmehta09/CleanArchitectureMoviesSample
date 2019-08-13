@@ -2,15 +2,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="#7579FF"
+    android:padding="8dp">
 
     <ImageView
         android:id="@+id/moviePoster"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="@dimen/list_poster_height"
-        android:adjustViewBounds="true"
         android:contentDescription="@string/movie_poster"
         android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/ratingBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -27,6 +30,7 @@
         android:numStars="5"
         android:rating="5"
         android:stepSize=".1"
+        app:layout_constraintBottom_toTopOf="@+id/movieReleaseDate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/moviePoster" />
@@ -35,8 +39,10 @@
         android:id="@+id/movieReleaseDate"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
+        android:layout_marginTop="8dp"
+        android:background="#000000"
         android:gravity="center_horizontal"
+        android:padding="4dp"
         android:textColor="@color/colorWhite"
         android:textSize="23sp"
         android:textStyle="bold"

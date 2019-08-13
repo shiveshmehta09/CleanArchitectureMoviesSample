@@ -89,9 +89,9 @@ class MovieListFragment : Fragment() {
 
     private fun showErrorMessage(errorCode: ErrorCode?, message: String?) {
         when (errorCode) {
-            ErrorCode.NO_DATA -> activity!!.toast(getString(R.string.error_no_data))
-            ErrorCode.NETWORK_ERROR -> activity!!.toast(getString(R.string.error_network, message))
-            ErrorCode.UNKNOWN_ERROR -> activity!!.toast(getString(R.string.error_unknown, message))
+            ErrorCode.NO_DATA -> activity?.toast(getString(R.string.error_no_data))
+            ErrorCode.NETWORK_ERROR -> activity?.toast(getString(R.string.error_network, message))
+            ErrorCode.UNKNOWN_ERROR -> activity?.toast(getString(R.string.error_unknown, message))
         }
     }
 }
